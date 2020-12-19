@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Referral Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container positions">
+  <h2>Job Openings</h2>
+  <ul>
+    <li class="pos-card" id="pos_1">
+      <div class="content">
+        <div class="title new">UI/UX Designer</div>
+        <div class="dept">Design</div>
+        <div class="date">June 4</div>
+        <div class="refer">Refer</div>
+      </div>
+      <ul class="desc">
+        <li>6+ years’ experience designing desktop and mobile apps.</li>
+        <li>Deep appreciation for simple solutions to complex problems.</li>
+        <li>An amazing portfolio demonstrating successful delivery of innovative design solutions.</li>
+      </ul>
+    </li>
+    <li class="pos-card" id="pos_2">
+      <div class="content">
+        <div class="title">Sales Manager</div>
+        <div class="dept">Sales</div>
+        <div class="date">April 21</div>
+        <div class="refer">Refer</div>
+      </div>
+      <ul class="desc"> 
+        <li>Determines annual unit and gross-profit plans by implementing marketing strategies; analyzing trends and results.</li>
+        <li>Implements national sales programs by developing field sales action plans.</li>
+        <li>Establishes and adjusts selling prices by monitoring costs, competition, and supply and demand.</li>
+      </ul>
+    </li>
+    <li class="pos-card" id="pos_3">
+      <div class="content">
+        <div class="title">Business Analyst</div>
+        <div class="dept">Research </div>
+        <div class="date">March 15</div>
+        <div class="refer">Refer</div>
+      </div>
+      <ul class="desc">
+        <li>Technical tasks (include coding, web pages, stored procedures, all database related work, technical design &amp; specifications, loading data).</li>
+        <li>Developing and documenting reports or data extracts starting from an end user request.</li>
+        <li>Developing and documenting specifications for software, websites and e-commerce development or modifications.</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="return">Return to listings   </div>
+<div class="container refer-card">
+  <div class="modal confirmed"><span class="close-modal"></span>
+    <h2>Thank you!</h2>
+    <p><span id="refer_name" class="focus"></span> has been submitted for the <span id="refer_pos" class="focus"></span> position.</p>
+  </div>
+  <div class="sign-up card">
+    <div class="card__header"> 
+      <h1>Employee Referral</h1>
+      <div class="description">For more information, please consult the <a href="#">employee handbook</a>.</div>
+    </div>
+    <div class="card__content">
+      <form class="referral" method="post">
+        <div class="field line">
+          <input class="req" maxlength="240" type="text" name="name" value="" required="required" id="name"/>
+          <label class="placeholder" for="name">Full Name</label>
+        </div>
+        <div class="field line">
+          <input class="req" maxlength="240" type="email" name="email" value="" required="required" id="email"/>
+          <label class="placeholder" for="email">Email</label>
+        </div>
+        <div class="field line inline">
+          <input class="req" maxlength="240" type="text" name="position" value="" required="required" id="position"/>
+          <label class="placeholder" for="position">Position</label>
+        </div>
+        <div class="field inline right"><span class="dropdown-wrapper">
+            <select class="empty" name="department" id="choice">
+              <option value="" selected="selected">Department</option>
+              <option value="1">Development</option>
+              <option value="2">Sales</option>
+              <option value="3">QA</option>
+              <option value="4">Design</option>
+              <option value="5">HR</option>
+              <option value="6">Research  </option>
+            </select></span></div>
+        <div>
+          <input type="submit" value="Submit" disabled="disabled" id="btn"/>
+        </div><a class="reset" href="#">Reset </a>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
